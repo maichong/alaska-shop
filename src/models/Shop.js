@@ -13,8 +13,11 @@ export default class Shop extends alaska.Model {
   static defaultColumns = 'logo title user brand activated createdAt';
   static defaultSort = '-createdAt';
 
-  static defaultFilters = {
-    activated: true
+  static defaultFilters = ctx => {
+    if (ctx.service.id === 'alaska-admin') return null;
+    return {
+      activated: true
+    };
   };
 
   static api = {

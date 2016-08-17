@@ -1,6 +1,6 @@
 {
   "name": "alaska-shop",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Alaska shop service",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,6 @@
     "alaska": "*"
   },
   "dependencies": {
-    "alaska-field-html": "^0.10.0"
+    "alaska-field-html": "^0.10.1"
   }
 }
